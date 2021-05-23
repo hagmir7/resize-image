@@ -9,8 +9,8 @@ function resize(){
         document.querySelector('#olde').src = event.target.result;
         imageElement.onload = function(e){
             const canvas = document.createElement('canvas');
-            if(e.target.width > 500 || e.target.height > 500){
-                const importWidth = document.getElementById('width').value;
+            const importWidth = document.getElementById('width').value;
+            if(parseInt(importWidth) <= 5000 ){
                 const  max_width = parseInt(importWidth);
                 const scaleSize = max_width / e.target.width;
                 canvas.width = max_width;
@@ -25,12 +25,14 @@ function resize(){
                     document.querySelector('#new').src =  srcinclded;
                     const download = document.getElementById('download');
                     download.classList.remove('hidden');
-                    const oldImage = document.querySelector('#olde').parentElement
-                    oldImage.classList.remove('hidden');
-                    oldImage.classList.add('d-flex');
+                    const oldImage = document.querySelector('#main-image');
+                    oldImage.classList.add('hidden');
                     download.href = srcinclded
                 }
                 
                 
 
-            };};};};
+            }else{
+                alert('your input value is not valid! Pleas enter your size first.')
+            };
+        };};};

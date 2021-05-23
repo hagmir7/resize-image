@@ -31,3 +31,20 @@ input:focus{
 #new{
     max-width: 200px;
 }
+
+.navbar-nav{
+    flex-direction: row!important;
+}
+
+footer{
+    position: fixed!important;
+    width: 100%;
+    bottom: 0;
+}
+@media only screen and (max-height: 700px) {
+    footer{
+        position: relative!important;
+        width: 100%;
+        bottom: 0;
+    }
+}
