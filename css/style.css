@@ -1,0 +1,15 @@
+
+
+
+.hidden{
+    display: none!important;
+}
+.logo{
+    display: flex;
+}
+.navbar{
+ background: linear-gradient(180deg,#42a5f5,#2196f3);
+}
+h1{
+    color: white;
+}

@@ -18,5 +18,11 @@ function resize(){
                 ctx.drawImage(e.target, 0, 0, canvas.width, canvas.height);
                 const srcinclded = ctx.canvas.toDataURL(e.target, "iamge/jpeg", );
                 document.querySelector('#new').src =  srcinclded;
-                console.log(srcinclded)
+                
+                const download = document.getElementById('download');
+                download.classList.remove('hidden');
+                const oldImage = document.querySelector('#olde').parentElement
+                oldImage.classList.remove('hidden');
+                oldImage.classList.add('d-flex');
+                download.href = srcinclded
             };};};};
