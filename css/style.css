@@ -13,3 +13,21 @@
 h1{
     color: white;
 }
+input{
+
+}
+input:focus{
+    outline: none!important;
+
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #f5eded;
+    border-color: #86b7fe;
+    outline:none!important;
+    box-shadow: none!important;
+}
+#new{
+    max-width: 200px;
+}

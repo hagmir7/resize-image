@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">
+          <a class="navbar-brand logo" href="image.html">
             <img src="img/upload.svg" alt="Resize Images Agmir" width="30" height="24" class="d-inline-block align-text-top">
            <h1 class="h5 mx-2"> Resize Images Agmir</h1>
           </a>
@@ -26,21 +26,25 @@
             <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6">
                <div class="border hidden justify-content-center">
                 <img class="hidden" id="olde">
-                <img id="new" width="200px">
+                <img id="new">
                </div>
             </div>
     
             <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6">
                 <a id="download" href="" class="btn btn-success hidden w-100" download>download</a>
+                <label for="width" class="text-danger"> Enter Width Size First!</label>
+                <input type="number" class="form-control mt-3" id="width" min="10" placeholder="Width With PX...">
 
             </div>
         </div>
     </div>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
         <div class="container-fluid">
           <div class="collapse navbar-collapse float-right">
             <ul class="navbar-nav d-flex justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="https://www.hagmir.com" target="_blank">Hagmir.com</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">About</a>
               </li>
